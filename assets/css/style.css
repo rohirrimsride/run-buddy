@@ -9,9 +9,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-section {
-    padding: 60px;
-}
+
 
 /* start header */
 header {
@@ -79,6 +77,11 @@ footer a {
 }
 /* end footer */
 
+/* style all sections */
+section {
+    padding: 60px;
+}
+
 /* Hero Style Start */
 .hero {
     display: flex;
@@ -145,11 +148,27 @@ footer a {
 }
 /* Hero Style End */
 
-.flex-row {
-    display: flex;
+/* section title styles start */
+.section-title {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    font-size: 55px;
+    color: #024e76;
+    border-bottom: 3px solid;
 }
 
-/* start "what you do" section */
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+/* section title styles end */
+
+/* what we do styles start */
 .intro p {
     text-align: center;
     line-height: 1.7;
@@ -158,7 +177,9 @@ footer a {
     font-size: 20px;
     margin: 0 auto;
 }
+/* what we do styles end */
 
+/* start "what you do" section */
 .steps {
     text-align: center;
     background: #fce138;
@@ -210,24 +231,6 @@ footer a {
     font-size: 26px;
     line-height: 1.5;
     color: #024e76;
-}
-
-.section-title {
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-    font-size: 55px;
-    color: #024e76;
-    border-bottom: 3px solid;
-}
-
-.primary-border {
-    border-color: #fce138;
-}
-
-.secondary-border {
-    border-color: #39a6b2;
 }
 /* end "what you do" section */
 
@@ -339,3 +342,16 @@ footer a {
     font-size: 16px;
 }
 /* Reach out styles End */
+
+/* utilities */
+.text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .flex-row {
+    display: flex;
+  }

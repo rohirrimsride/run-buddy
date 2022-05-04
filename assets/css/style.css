@@ -13,7 +13,15 @@ body {
 
 /* start header */
 header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     display: flex;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 35px;
@@ -50,6 +58,13 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 /* end header */
 
@@ -93,6 +108,8 @@ section {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 .hero-cta {
@@ -132,6 +149,7 @@ section {
 }
 
 .form-input {
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 10px;
     border: 1px solid #024e76;
     display: block;
@@ -140,6 +158,11 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 .hero-form label {
@@ -153,6 +176,10 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;
 }
 /* Hero Style End */
 
@@ -194,14 +221,18 @@ section {
 }
 
 .step {
+    border-bottom: 1px solid #39a6b2;
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:last-child {
+    border-bottom: none;
 }
 
 .step h3 {
@@ -330,6 +361,7 @@ section {
 
 .contact-form input, 
 .contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 10px;
     border: 1px solid #024e76;
     display: block;
@@ -341,6 +373,12 @@ section {
     margin-top: 5px;
 }
 
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
 .contact-form button {
     border-radius: 10px;
     width: 100%;
@@ -350,6 +388,11 @@ section {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 /* Reach out styles End */
 
@@ -369,6 +412,7 @@ section {
 /* media query for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
     header {
+        position: relative;
         padding-bottom: 0;
         justify-content: center;
     }

@@ -21,6 +21,7 @@ header {
 }
 
 header h1 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
@@ -45,6 +46,7 @@ header nav ul {
 }
 
 header nav ul li a {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -103,16 +105,19 @@ section {
 }
 
 .hero-cta h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-style: italic;
     font-size: 55px;
     color: #fce138;
 }
 
 .hero-form {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 40%;
     margin: 3.5%;
     border: solid 3px #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     color: #024e76;
 }
@@ -127,6 +132,7 @@ section {
 }
 
 .form-input {
+    border-radius: 10px;
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -141,6 +147,7 @@ section {
 }
 
 .hero-form button {
+    border-radius: 10px;
     color: #fce138;
     background-color: #024e76;
     border: none;
@@ -323,6 +330,7 @@ section {
 
 .contact-form input, 
 .contact-form textarea {
+    border-radius: 10px;
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -334,6 +342,7 @@ section {
 }
 
 .contact-form button {
+    border-radius: 10px;
     width: 100%;
     border: none;
     background: #fce138;

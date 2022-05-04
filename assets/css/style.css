@@ -456,7 +456,7 @@ section {
         text-align: center;
     }
 
-    .contact-info >* {
+    .contact-info > * {
         flex: 0 100%;
     }
 

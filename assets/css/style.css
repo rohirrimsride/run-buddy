@@ -107,7 +107,6 @@ section {
     flex-wrap: wrap;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     background-position: 80%;
 }
@@ -216,7 +215,6 @@ section {
 
 /* start "what you do" section */
 .steps {
-    text-align: center;
     background: #fce138;
 }
 
@@ -284,7 +282,7 @@ section {
 
 .trainer {
     flex: 1;
-    margin: 0 auto 20px auto;
+    margin: 20px;
     background: #024e76;
     color: #fce138;
 }
@@ -315,8 +313,7 @@ section {
 
 /* reach out styles start */
 .contact {
-    background-color: #024e76;
-    
+    background-color: #024e76;  
 }
 
 .contact h2 {
@@ -484,6 +481,10 @@ section {
 
     .step-text {
         flex: 100%;
+    }
+
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
     }
 }
 
